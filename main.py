@@ -16,7 +16,7 @@ import os
 
 
 def import_images():
-    image_directory = "D:\\Internship\\Blender\\render_0\\"
+    image_directory = "image_directory\"
     image_list = [Image.open(os.path.join(image_directory, img)) for img in os.listdir(image_directory)]
     return numpy.array([numpy.array(img) for img in image_list])
 
